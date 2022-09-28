@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <title>Encinal Radio</title>
+      <style>
+
+        body {
+          margin: 0;
+          padding: 0;
+          background: white;
+          font-size: 1em;
+
+        }
+
+        #kjtz {
+          height: 5em;
+        }
+
+        #logo {
+          padding: 25px;
+        }
+
+        .inversed {
+          -webkit-filter: invert(100%);
+          filter: invert(100%);
+        }
+
+        hr {
+          border-top: 1px dashed black;
+        }
+
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+        }
+        li {
+          display: inline;
+        }
+
+        li a {
+          padding-left: 35px;
+          padding-right: 35px;
+        }
+
+        li img {
+          height: 1em;
+        }
+
+        a {
+        text-decoration: underline;
+
+          color: #000;
+        }
+
+        .linkhover:hover {
+          color: white;
+          background-color: black;
+        }
+
+        #title {
+          text-decoration: none;
+          }
+
+        #title:hover {
+          color: black;
+          background-color: white;
+          }
+
+        #title:hover {
+          color: black;
+          background-color: white;
+          }
+
+        #container {
+          width: 50%;
+          height: 100%;
+          border: 1px solid black;
+          overflow-y: scroll;
+
+        }
+
+        #invert {
+          background-color: white;
+          border: 1px dashed black;
+          color: black;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1em;
+          font-family: Times New Roman;
+        }
+
+        #invert:hover {
+          background-color: black;
+          border: 1px dashed white;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1em;
+          font-family: Times New Roman;
+        }
+
+        .bodyimages {
+          width: 80%;
+          padding: 5px;
+          border: 1px solid black;
+        }
+
+        .paragraphs {
+          width: 80%;
+          text-align: left;
+        }
+
+        #player {
+          width: 80%;
+          padding: 5px;
+          border: 1px solid black;
+        }
+
+      </style>
+  </head>
+  <body>
+    <center>
+      <div id="container">
+        <div id="logo">
+          <a href="https://encinalradio.com">
+        <img id="kjtz" src="assets/kjtz.png"><br><br>
+      </a>
+        <i>"The Bay Area's #1 Student Led Radio Station"</i>
+      </div>
+          <hr>
+            <ul>
+              <li><a class="linkhover" href="">Listen</a></li>
+              <li><a class="linkhover" href="">Archive</a></li>
+              <li><a class="linkhover" href="">About</a></li>
+              <button id="invert">Invert</button>
+            </ul>
+          <hr><br><br>
+            <h1>Tune in live!</h1><br><br>
+          <div id="player">
+          <iframe src="https://player.twitch.tv/?channel=encinalradio&parent=www.example.com" frameborder="0" allowfullscreen="false" scrolling="no" height="378" width="100%"></iframe>
+        </div><br><br>
+          <img class="bodyimages" src="assets/hello.png"><br><br>
+          <div class="paragraphs">
+            <p>96.1 KJTZ is a Low-Power FM radio station operating at Encinal High School in Alameda, California. Tune in on 96. 1 FM on your radio every weekday morning between 7 am and 11 am. You can also now listen to our previous student-led shows and segments on our <a class="linkhover" href="">Soundcloud Playlist.</a><p>
+          </div><br><br>
+          <h1>Weekly Schedule</h1><br><br>
+
+          <table>
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+          </table>
+
+      </div>
+
+    </center>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+
+   $("button").click(function () {
+     $("html").toggleClass("inversed");
+   });
+
+  </script>
+</html>
